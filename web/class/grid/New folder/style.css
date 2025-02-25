@@ -1,0 +1,12 @@
+.container{
+    display: grid;
+    padding: 5px;
+    background-color: black;
+}
+
+
+.container > div{
+    background-color: orangered;
+    padding: 5px;
+    margin: 5px;
+}

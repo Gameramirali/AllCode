@@ -1,0 +1,49 @@
+.nav{
+    background-color: #efefef;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+.nav a {
+    float: right;
+    color: rgb(46,46,46);
+    text-align:center;
+    padding:14px 16px;
+    font-size:18px;
+    
+}
+.nav a:hover{
+    border-bottom:2px solid red;
+}
+.active{
+    border-bottom:2px solid red;
+}
+
+.icon{
+    display: none;
+}
+
+
+@media screen and (max-width:600px){
+    .nav.responsive{
+        position: relative;
+    }
+    .nav a:not(:first-child){
+        display: none;
+    }
+    .nav a.icon{
+        display: block;
+        float: left;
+    }
+    .nav.responsive a{
+        display: block;
+        float: none;
+        text-align: right;
+    }
+    .nav.responsive a.icon{
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}

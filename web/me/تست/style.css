@@ -1,0 +1,32 @@
+@import url(./font.css);
+
+@font-face {
+    font-family: iran;
+    src: url(./iran.ttf);
+}
+
+a{text-decoration: none;}
+
+*,body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: iran;
+    direction: rtl;
+}
+
+header{
+    background-color: darkblue;
+}
+
+.logotext{
+    color: white;
+}
+
+ul li{
+    color: white;
+    display: inline;
+    margin: 5px;
+    float: left;
+    z-index: 99;
+}

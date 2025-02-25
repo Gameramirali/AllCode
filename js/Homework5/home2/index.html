@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Box{
+            position: absolute;
+            border: 1px solid gray;
+            border-radius: 5px;
+            padding: 10px;
+            width: 240px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .Box .Submit{
+            margin-top: 5px;
+        }
+        .Box .Result{
+            border: 1px solid rgba(0, 0, 0, 0.253);
+            border-radius: 5px;
+            margin-top: 2.5px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="Box">
+        enter your number:
+        <br>
+        <input type="text" id="Result" class="Result">
+        <br>
+        <input type="button" value="Submit" class="Submit" onclick="Submit()">
+        <script src="./main.js"></script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+@import url(./grid_system.css);
+
+
+@font-face {
+    font-family: Iran;
+    src: url(../font/Qs_Iranyekan\ bold.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Iran;
+}
+
+
+.page{
+    width: 100%;
+    height: 100vh;
+    background-color: #f7f7f7;
+}
+
+header .menu-icon{
+    display: none;
+}
+
+
+.nav{
+    width: 100%;
+    height: 70px;
+    background-color: #fff;
+    box-shadow: 0 2px 12px #6c6c6c;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.nav img{
+    margin: 25px;
+    float: right;
+    
+}
+
+.nav ul{
+    list-style: none;
+    float: right;
+}
+
+
+
+.nav ul li{
+    display: inline-block;
+    padding: 25px 10px;
+}
+
+
+
+.icon{
+    display: none;
+    position: relative;
+    /* margin: -28px 27px; */
+    top: 15px;
+    right: 30px;
+}
+
+
+@media screen and (max-width:600px){
+    .nav a:not(:first-child){
+        display: none;
+    }
+    .nav a.icon{
+        display: block;
+        float: left;
+    }
+    .nav.responsive a{
+        display: block;
+        /* height: 100%; */
+        /* display: flex; */
+        cursor: pointer;
+    }
+    .nav img{
+        position: absolute;
+        left: 50%;
+        /* top: 50%; */
+        transform: translate(-50%,-50%);
+    }
+}
+

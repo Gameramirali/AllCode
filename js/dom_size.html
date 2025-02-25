@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+          width: 300px;
+          height: 200px;
+          border: 5px solid red;
+        }
+        #circle {
+          width: 20px;
+          height: 20px;
+          background-color: red;
+          position: absolute;
+          border-radius: 100%;
+          top: 0;
+        }
+        .box div {
+          height: 200px;
+        }
+      </style>
+</head>
+<body>
+    <button onclick="slowDown()">go down</button>
+    <div id="circle"></div>
+    <p>number1</p>
+<div id="example1" class="box">
+      <div>box1</div>
+      <div>box2</div>
+      <div>box3</div>
+      <div>box4</div>
+      <div>box5</div>
+      <div>box6</div>
+      <div>box7</div>
+    </div>
+    <p>number2</p>
+    <div id="example2" class="box">
+      <div>box1</div>
+      <div>box2</div>
+      <div>box3</div>
+      <div>box4</div>
+      <div>box5</div>
+      <div>box6</div>
+      <div>box7</div>
+    </div>
+<p>number3</p>
+    <div id="example3" class="box">
+      <div>box1</div>
+      <div>box2</div>
+      <div>box3</div>
+      <div>box4</div>
+      <div>box5</div>
+      <div>box6</div>
+      <div>box7</div>
+    </div>
+    <button onclick="gotocorner()">go to corner</button>
+    <button onclick="gotoTop()">go Top</button>
+    <button onclick="goBox()">go to corner</button>
+    <script>
+      function slowDown() {
+        window.scrollBy(0, 10);
+      }
+      function gotocorner(){
+        circle.style.top=example1.offsetTop+"px";
+        circle.style.left=example1.offsetLeft+"px";
+      }
+      function gotoTop(){
+        window.scrollTo(0,0)
+      }
+      function goBox(){
+        let boxnumber=prompt('enter the number box: ')
+        window["example"+boxnumber].scrollIntoView()
+      }
+    </script>
+</body>
+</html>

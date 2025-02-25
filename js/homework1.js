@@ -1,0 +1,10 @@
+let div_body=document.createElement("div");
+div_body.setAttribute("style","display: block; background-color: red;")
+let ul=div_body.appendChild(document.createElement("ul"))
+let n1=ul.appendChild(document.createElement('li'))
+n1.appendChild(document.createTextNode('n1'))
+let n2=ul.appendChild(document.createElement('li'))
+n2.appendChild(document.createTextNode('n2'))
+let a=ul.appendChild(document.createElement('a'))
+a.appendChild(document.createTextNode('link'))
+document.body.append(div_body)

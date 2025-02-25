@@ -1,0 +1,329 @@
+
+@import './_contact.css';
+@import url(./_nav.css);
+@import url(./_header.css);
+@import url(../../font.css);
+
+ul.menu li{
+display: inline;
+padding: 10px;
+line-height: 70px;
+}
+@font-face {
+    font-family: vazir;
+    src: url(../font/Qs_Iranyekan\ bold.ttf);
+}
+
+body{
+    font-family: vazir;
+    direction: rtl;
+}
+
+.container-fluid-custom{
+    background-color: rgb(1, 1, 126);
+    color: #fff;
+    height: 40px;
+}
+
+.card-body i{
+    font-size: 48px;
+    color: orangered;
+}
+.card-body div{
+    
+    top:0;
+    right: 65px;
+    
+}
+
+.card-body div a{
+    font-size: 18px;
+}
+.card-body div p{
+    position: absolute;
+    font-size: 16px;
+    top: 71%;
+    left: -4%;
+    transform: translate(-23%, 6%);
+}
+
+.card{
+    padding: 20px;
+    box-shadow: 1px 1px 1px 1px #656363;
+    
+}
+
+.card .card-header .overlay{
+    background-color: rgba(0, 0, 0, .5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    transition:opacity 1s ease-in;
+}
+.card-header img{
+    vertical-align: bottom;
+    
+}
+
+.card:hover .overlay{
+    opacity: 0.5;
+}
+
+.course-wrapper{
+    background-color: #efefef;
+    background-attachment: fixed;
+}
+
+.about-us-left-side{
+    background-color: #efefef;
+    padding: 60px;
+}
+.about-us-left-side h4{
+    border-bottom: 1px solid #656363;
+    padding-bottom: 18px;
+    font-size: 20px;
+}
+.about-us-left-side p{
+    padding: 26px;
+    font-size: 17px;
+    line-height: 32px;
+    color: #6b6666;
+}
+.about-us-left-side a {
+    background-color: orange;
+    padding: 5px 10px;
+    border-radius: 3px;
+    color: #fff;
+    float: left;
+    margin-left: 30px;
+    font-size: 16px;
+    transition: .5s ease-in;
+}
+.about-us-left-side a:hover{
+    border-radius: 0 10px 0 10px;
+
+}
+
+.bg-black{
+    background-image: url(../img/OIP.jpg);
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+.team-intro{
+    background-color: antiquewhite;
+    position: absolute;
+    top: 95%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    
+    border-radius: 3px;
+    text-align: center;
+    box-shadow: -1px 3px 7px 1px #e6e6e6;
+    
+}
+.team-intro a{
+    border: 2px solid orange;
+    padding: 5px 1px;
+    margin: 10px;
+    width: 100px;
+    display: inline-block;
+
+    border-radius: 2px;
+    transition: .5s ease-in;
+}
+
+.team-intro a:hover{
+    background-color: orange;
+}
+
+.project-warpper{
+    background-color: #ffc412;
+}
+.count{
+    margin: 30px;
+    color:#fff;
+    font-size: 26px;
+}
+.project-title{
+    font-size: 18px;
+}
+.topic-wrapper .card-header img{
+    transition: .5s ease-in;
+}
+.topic-wrapper:hover img{
+    transform: scale(1.2) rotate(10deg);
+}
+
+.topic-wrapper .card-header{
+    overflow: hidden;
+}
+
+.topic-wrapper .card{
+    box-shadow: 1px 5px 15px 2px rgba(0, 0, 0, .5);
+}
+.topic-wrapper .card-body{
+    margin: 32px 10px;
+}
+.topic-wrapper .card-body a{
+    font-size: 16px;
+    padding: 5px;
+}
+.card-body .date{
+    width: 40px;
+    text-align: center;
+    color:#fff;
+    top: -57px;
+    right: 77px;
+    font-size:16px;
+}
+.card-body .date :first-child{
+    background-color: orange;
+}
+.card-body .date :last-child{
+    background-color: #b8b7b7;
+}
+
+
+.card-footer ul li i{
+    margin: 2px;
+}
+
+.card{
+    margin: 10px;
+}
+
+
+
+.faq-wrapper span::before{
+    content: "";
+    width: 40px;
+    height: 5px;
+    background-color: orangered;
+    position: absolute;
+    right: 85px;
+    top: 11px;
+}
+
+.faq-wrapper span::after{
+    content: "";
+    width: 40px;
+    height: 5px;
+    background-color: orangered;
+    position: absolute;
+    right: -42.8px;
+    top: 11px;
+}
+
+
+.faq-wrapper .faq-right-side{
+    box-shadow: 2px 5px 15px rgba(0, 0, 0, .5);
+    height: 500px;
+    background-color: #fff;
+    padding: 50px;
+    margin: 5px;
+}
+
+
+.faq-wrapper .faq-right-side i{
+    
+    color: #6b6bef;
+    font-size: 35px;
+    
+}
+
+.faq-wrapper .faq-right-side h6{
+    font-size: 1.1em;
+}
+
+
+.faq-wrapper .faq-right-side h6 span{
+    vertical-align: 10px;
+}
+
+.faq-wrapper .faq-right-side ul li p{
+    margin-right: 50px;
+    font-size: larger;
+}
+
+
+.faq-wrapper .faq-right-side ul li{
+    border: 5px solid #efefef;
+}
+
+
+footer{
+    background-color: darkblue;
+    color: white;
+}
+
+.social{
+    margin-top: 45px;
+}
+
+.social a{
+    margin: 50px;
+    color: beige;
+    transition: all .15s ease-in;
+    width: 5px;
+    height: 5px;
+}
+
+.social a:hover{
+    background-color: blueviolet;
+}
+
+
+.side-down button{
+    left: 30px;
+}
+
+
+
+.faq-left-side .tabs{
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, .75);
+    background-color: #ffc412;
+}
+
+.faq-left-side .tabs .tab{
+    color: #fff;
+    overflow: hidden;
+}
+
+
+.faq-left-side .tab-label{
+    padding: 16px;
+    background-color: #ffc412;
+    width: 100%;
+    cursor: pointer;
+    display: block;
+}
+
+
+.faq-left-side .tab-label::after{
+    content: '\276f';
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    float: left;
+}
+
+
+.faq-left-side .tab-content{
+    height: 0;
+    background-color: #6b6bef;
+    transition: .2s ease-in;
+}
+
+
+.faq-left-side  input:checked ~ .tab-content{
+    height: 200px;
+}
+
+
+

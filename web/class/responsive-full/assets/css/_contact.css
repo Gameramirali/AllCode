@@ -1,0 +1,47 @@
+.container-fluid-custom .contact{
+    font-size: 15px;
+}
+.container-fluid-custom .contact i{
+    color: blue;
+    vertical-align: -10px;
+   
+    
+}
+.container-fluid-custom .contact span{
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff;
+    margin: 5px;
+    vertical-align: 1px;
+}
+.container-fluid-custom .social-media{
+    direction: ltr;
+}
+
+.container-fluid-custom .social-media i{
+    vertical-align: -3px;
+    margin-right: 6px;
+}
+.container-fluid-custom .social-media a{
+    color: blue;
+    vertical-align: -7px;
+    margin-right: 3px;
+    padding: 7px;
+    width: 40px;
+}
+
+.container-fluid-custom .social-media a:hover{
+    background-color: white;
+    animation: myanim1 0.5 linear infinite;
+}
+
+
+
+@keyframes myanim1 {
+    20%{border-radius: 2px;}
+    40%{border-radius: 4px;}
+    60%{border-radius: 6px;}
+    80%{border-radius: 8px;}
+    100%{border-radius: 10px;}
+}
+
+

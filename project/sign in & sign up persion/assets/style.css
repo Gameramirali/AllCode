@@ -1,0 +1,18 @@
+@import url(./style-grid-system.css);
+
+@font-face {
+    font-family: Iran;
+    src: url(./Qs_Iranyekan\ bold.ttf);
+}
+
+*,body{
+    font-family: Iran;
+    padding: 0;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: blueviolet;
+}

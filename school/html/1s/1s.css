@@ -1,0 +1,53 @@
+@font-face {
+    font-family: iran;
+    src: url(./Qs_Iranyekan\ bold.ttf);
+}
+
+*,body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: iran;
+}
+
+.one{
+    color: red;
+    border: 5px solid red
+}
+
+.two{
+    color: green;
+    border: 5px solid red
+}
+
+.three{
+    color: orange;
+    border: 5px solid red
+}
+
+.four{
+    color: pink;
+    border: 5px solid red
+}
+
+.five{
+    color: brown;
+    border: 5px solid red
+}
+
+.six{
+    color: blue;
+    border: 5px solid red
+}
+
+.seven{
+    color: purple;
+    border: 5px solid red;
+}
+
+
+div{
+    border-radius: 15px;
+    background-color: aqua;
+    padding: 5px;
+}

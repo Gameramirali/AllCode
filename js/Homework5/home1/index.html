@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./calculater.css" /> 
+    <style>
+        body,
+        html {
+        background: #ecedef; 
+        margin: 0;
+        padding: 0;
+        }
+
+        .container {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #fff;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+        border-radius: 14px;
+        padding-bottom: 20px;
+        width: 296px;
+        }
+        .display {
+        width: 100%;
+        height: 60px;
+        padding: 40px 0;
+        background: #7fffd4;
+        border-top-left-radius: 14px;
+        border-top-right-radius: 14px;
+        }
+        .buttons {
+        padding: 20px 20px 0 20px;
+        }
+        .row {
+        width: 420px;
+        float: left;
+        }
+        input[type="button"] {
+        width: 85px;
+        height: 70px;
+        float: left;
+        padding: 0;
+        margin: 5px;
+        box-sizing: border-box;
+        background: #ecedef;
+        border: none;
+        font-size: 30px;
+        line-height: 30px;
+        border-radius: 50%;
+        font-weight: 700;
+        color: #5e5858;
+        cursor: pointer;
+        }
+        input[type="text"] {
+        width: 270px;
+        height: 60px;
+        float: left;
+        padding: 0;
+        box-sizing: border-box;
+        border: none;
+        background: none;
+        color: #000000;
+        text-align: right;
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 60px;
+        margin: 0 25px;
+        }
+        .red {
+        background: #ff0509 !important;
+        color: #ffffff !important;
+        }
+        .green {
+        background: #4ff703 !important;
+        color: #ffffff !important;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form name="form" id="myForm">
+        <div class="display">
+          <input
+            type="text"
+            placeholder="0"
+            name="displayResult"
+            id="displayResult"
+          />
+        </div>
+        <div class="row">
+          <input
+            type="button"
+            name="b7"
+            value="7"
+            onclick="addToCalculator(b7.value)"
+          />
+          <input
+            type="button"
+            name="b8"
+            value="8"
+            onclick="addToCalculator(b8.value)"
+          />
+          <input
+            type="button"
+            name="b9"
+            value="9"
+            onclick="addToCalculator(b9.value)"
+          />
+        </div>
+        <div class="row">
+          <input
+            type="button"
+            name="b4"
+            value="4"
+            onclick="addToCalculator(b4.value)"
+          />
+          <input
+            type="button"
+            name="b5"
+            value="5"
+            onclick="addToCalculator(b5.value)"
+          />
+          <input
+            type="button"
+            name="b6"
+            value="6"
+            onclick="addToCalculator(b6.value)"
+          />
+        </div>
+        <div class="row">
+          <input
+            type="button"
+            name="b1"
+            value="1"
+            onclick="addToCalculator(b1.value)"
+          />
+          <input
+            type="button"
+            name="b2"
+            value="2"
+            onclick="addToCalculator(b2.value)"
+          />
+          <input
+            type="button"
+            name="b3"
+            value="3"
+            onclick="addToCalculator(b3.value)"
+          />
+        </div>
+        <div class="row">
+          <input
+            type="button"
+            name="b0"
+            value="0"
+            onclick="addToCalculator(b0.value)"
+          />
+          <input type="button" onclick="reset2()" value="C" class="red" />
+          <input type="button" class="green" value="=" onclick="finilize()" />
+        </div>
+      </form>
+    </div>
+
+    <script>
+      var num1=[]
+
+      function addToCalculator(value){
+          document.getElementById("displayResult").value+=value;
+          num1.push(value)
+      }
+
+      function reset2(){
+          console.log('hello world')
+      }
+    </script>
+  </body>
+</html>
+ 

@@ -1,0 +1,29 @@
+@font-face {
+    font-family: iran;
+    src: url(./iran.ttf);
+}
+
+*{
+    font-family: iran;
+}
+
+.container{
+    display: grid;
+    grid-template-areas: 
+    "nav nav nav nav nav nav nav nav nav nav nav nav nav"
+    'topic topic topic  slidebar slidebar slidebar slidebar slidebar slidebar slidebar slidebar'
+    ;
+}
+
+.container>div{
+    padding: 25px 0;
+    margin: 10px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: yellow;
+}
+
+.child1{
+    grid-area: nav;
+}

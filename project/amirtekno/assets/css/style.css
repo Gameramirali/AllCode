@@ -1,0 +1,101 @@
+@font-face {
+    font-family: vasir;
+    src: url(assets/font/Vazirmatn-Bold.woff2);
+}
+
+body{
+    font-family: vazir;
+    direction: rtl;
+}
+
+.container-fluid-custom{
+    background-color: yellow;
+    color: #fff;
+    height: 40px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+
+.container-fluid-custom .contact{
+    font-size: 15px;
+}
+
+.container-fluid-custom .contact i{
+    color: orangered;
+    vertical-align: -12px;
+}
+
+.container-fluid-custom .contact i span{
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-fluid-custom .social-media{
+    direction: ltr;
+}
+
+.menu{
+    position: absolute;
+    width: 100%;
+    height: 30px;
+}
+
+.container-fluid-custom .social-media i{
+    vertical-align: -3px;
+    margin-right: 6px;
+}
+
+
+.container-fluid-custom .social-media a{
+    color: orangered;
+    vertical-align: -7px;
+    margin-right: 3px;
+    padding: 7px;
+    width: 40px;
+}
+
+.nav{
+    background-color: lightgray;
+    overflow: hidden;
+}
+
+.nav a{
+    float: right;
+    color: rgb(46, 46, 46);
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 18px;
+}
+.nav a:hover{
+    border-bottom: 2px solid red;
+    animation: Hover-on-nav 0.5s linear;
+}
+
+.icon{
+    display: none;
+}
+
+
+@media screen and (max-width:600px){
+    .nav a:not(:first-child){
+        display: none;
+    }
+    .nav a.icon{
+        display: block;
+        float: left;
+    }
+    .nav.responsive a{
+        display: block;
+        float: none;
+        text-align: right;
+    }
+}
+
+@keyframes Hover-on-nav {
+    0%{border-bottom: 2px solid white;}
+    33%{border-bottom: 2px solid rgb(255, 154, 154);}
+    66%{border-bottom: 2px solid rgb(248, 56, 56);}
+    100%{border-bottom: 2px solid rgb(255, 0, 0);}
+}

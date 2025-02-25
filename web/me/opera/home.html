@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/style-grid-system.css ">
+    <link rel="stylesheet" href="font.css">
+</head>
+<body>
+    <header>
+
+        <nav>
+            <div class="nav-right">
+                <a href=""><i class="fa fa-user"></i></a>
+                <a href=""><i class="fa fa-shopping-cart"></i></a>
+                <a href="./home.html"><i class="fa fa-home"></i></a>
+                <a href=""><i class="fa fa-search"></i></a>
+            </div>
+            <div class="nav-left">
+                <div class="register-login-btn">
+                    <i class="fa fa-user"></i>
+                    <a href="./sign_in.html">ثبت نام/ورود</a>
+                </div>
+            </div>
+        </nav>
+
+        <section class="slider">
+            <div class="slides">
+                <div class="item bg-orange active" id="slide1"></div>
+                <div class="item bg-red " id="slide3"></div>
+                <div class="item bg-fire" id="slide1"></div>
+            </div>
+            <div class="buttons">
+                <i onclick="setSlide('slide1', 1)" class="fa fa-circle"></i>
+                <i onclick="setSlide('slide2', 2)" class="fa fa-circle"></i>
+                <i onclick="setSlide('slide3', 3)" class="fa fa-circle"></i>
+            </div>
+        </section>
+    </header>
+    <section class="home-page-prudect-section">
+        <div class="row">
+            <div class="col-xl-3 col-l-3 col-md-4 col-s-12 col-xs-12">
+                <div class="shopping-card">
+                    <div class="img-sec"><div class="bg-img"></div></div>
+                    <div class="title">هدست کامپیوتر تسکو مدل */*/</div>
+                    <div class="bottom">
+                        <div class="right-side">500,000 تومن</div>
+                        <div class="left-side"><a href="">خرید کردن</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-l-3 col-md-4 col-s-12 col-xs-12">
+                <div class="shopping-card">
+                    <div class="img-sec"><div class="bg-img"></div></div>
+                    <div class="title">هدست کامپیوتر تسکو مدل */*/</div>
+                    <div class="bottom">
+                        <div class="right-side">500,000 تومن</div>
+                        <div class="left-side"><a href="">خرید کردن</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-l-3 col-md-4 col-s-12 col-xs-12">
+                <div class="shopping-card">
+                    <div class="img-sec"><div class="bg-img"></div></div>
+                    <div class="title">هدست کامپیوتر تسکو مدل */*/</div>
+                    <div class="bottom">
+                        <div class="right-side">500,000 تومن</div>
+                        <div class="left-side"><a href="">خرید کردن</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-l-3 col-md-4 col-s-12 col-xs-12">
+                <div class="shopping-card">
+                    <div class="img-sec"><div class="bg-img"></div></div>
+                    <div class="title">هدست کامپیوتر تسکو مدل */*/</div>
+                    <div class="bottom">
+                        <div class="right-side">500,000 تومن</div>
+                        <div class="left-side"><a href="">خرید کردن</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <section class="supper-offer-section">
+        <div class="row">
+            <div class="col-xl-9 col-l-9">
+                <div class="supper-offer-box">
+                    <span class="supper-offer-box-title">پیشنهاد شگفت انگیز</span>
+                    <div class="body">
+                        <div class="row">
+
+                            <div class="col-xl-4 col-l-4">
+                                <div class="image-container"><div class="bg-con"></div></div>
+                            </div>
+                            <div class="col-xl-8 col-l-8"></div>
+                            <div class="spesification">
+
+                                <div class="price-row">
+                                        <div class="price">800,000,000 تومان</div>
+                                        <div class="off">50% تخفیف</div>
+                                </div>
+                                <div class="title">هدست ایسوس مدل strick</div>
+                                <div class="counter-down">
+
+                                    <span id="hour">19</span>:<span id="min">26</span>:<span id="sec">40</span>
+
+                                </div>
+                                <div class="remaining-timer">زمان باقیمانده تا پایان سفارش</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-l-3">
+                <div class="banner"><div class="bg-banner"></div></div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer>
+        <div class="row">
+            <div class="col-xl-8 xol-l-8 col-md-8 col-s-8 col-xs-8"><div class="right">
+                <div class="title">
+                    <h2>درباره ما</h2>
+                </div>
+                <div class="des">
+                    <h4>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</h4>
+                </div>
+            </div></div>
+            <div class="col-xl-4 xol-l-4 col-md-4 col-s-4 col-xs-4"><div class="left">
+                
+                <div class="title">
+                    <h3>ما را در شبکه های اجتماعی دنبال کنید:</h3>
+                </div>
+                <div class="social">
+                    <a href="#"><i class="fab fa-telegram-plane"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+
+                <i class="fas fa-envelope black"><span>amiralipourbabaeii@gmail.com</span></i>
+
+            </div></div>
+        </div>
+        <div class="bottom"><p>کلیه حقوق محفوظ می باشد©2019</p></div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

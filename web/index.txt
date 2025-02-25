@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive menu</title>
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="crossorigin="anonymous"referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section class="page">
+
+        <header>
+
+            
+            <nav class="nav" id="mynav">
+                <div class="logo">
+                    <img src="./logo-quera-heavy.2-1c1287ee3575.svg" alt="Quera">
+                    <div class="li">
+                        <ul>
+                            <a href=""></a>
+                            <a href=""><li>کلاس ها</li></a>
+                            <a href=""><li>کالج</li></a>
+                            <a href=""><li>بانک سوالات</li></a>
+                            <a href=""><li>مسابقات</li></a>
+                            <a href=""><li>کاریابی</li></a>
+                            <a href=""><li>جونیورا</li></a>
+                            <a href=""><li>بوت کمپ</li></a>
+                            <a href="javascript:void(0)" class="icon" onclick="myclick()"><i class="fa-solid fa-bars"></i></a>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+        </header>
+
+    </section>
+
+    <script src="./main.js"></script>
+</body>
+</html>
