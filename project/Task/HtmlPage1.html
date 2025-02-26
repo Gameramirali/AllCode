@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مراقبت از حیوانات خانگی</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: #ff6347;
+        }
+
+        #pets {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+
+        .pet img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .pet button {
+            display: block;
+            margin-top: 10px;
+        }
+
+        #pet-info {
+            margin-top: 20px;
+        }
+
+        #progress-bar {
+            width: 100%;
+            height: 20px;
+            background-color: #d3d3d3;
+        }
+
+            #progress-bar div {
+                height: 100%;
+                background-color: #4caf50;
+                width: 0%;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>مراقبت از حیوانات خانگی</h1>
+        <div id="pets">
+            <div class="pet" onclick="showPetInfo('dog')">
+                <img src="images/dog.jpg" alt="Dog">
+                <button>سگ</button>
+            </div>
+            <div class="pet" onclick="showPetInfo('cat')">
+                <img src="images/cat.jpg" alt="Cat">
+                <button>گربه</button>
+            </div>
+            <div class="pet" onclick="showPetInfo('bird')">
+                <img src="images/bird.jpg" alt="Bird">
+                <button>پرنده</button>
+            </div>
+            <div class="pet" onclick="showPetInfo('rabbit')">
+                <img src="images/rabbit.jpg" alt="Rabbit">
+                <button>خرگوش</button>
+            </div>
+        </div>
+        <div id="pet-info">
+            <h2>اطلاعات حیوان</h2>
+            <p id="pet-details"></p>
+            <button onclick="feedPet()">غذا دادن</button>
+            <button onclick="playWithPet()">بازی کردن</button>
+            <button onclick="cleanPet()">نظافت</button>
+        </div>
+        <div id="progress">
+            <h2>پیشرفت</h2>
+            <div id="progress-bar">
+                <div style="width: 0%;"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const petData = {
+            dog: {
+                name: "سگ",
+                age: "2 سال",
+                food: "گوشت و غذاهای خشک",
+                care: "بررسی مرتب برای سلامت و شستشو"
+            },
+            cat: {
+                name: "گربه",
+                age: "3 سال",
+                food: "غذاهای خشک و کنسروی",
+                care: "نظافت و بررسی مرتب برای بیماری"
+            },
+            bird: {
+                name: "پرنده",
+                age: "1 سال",
+                food: "دانه‌ها و میوه‌ها",
+                care: "نظافت قفس و تغذیه"
+            },
+            rabbit: {
+                name: "خرگوش",
+                age: "4 سال",
+                food: "سبزیجات و هویج",
+                care: "نظافت و بررسی سلامت"
+            }
+        };
+
+        function showPetInfo(pet) {
+            const petDetails = petData[pet];
+            document.getElementById('pet-details').innerText = `
+                    نام: ${petDetails.name}
+                    سن: ${petDetails.age}
+                    غذا: ${petDetails.food}
+                    مراقبت: ${petDetails.care}
+                `;
+        }
+
+        function feedPet() {
+            alert("غذا به حیوان داده شد!");
+            updateProgress(10);
+        }
+
+        function playWithPet() {
+            alert("بازی با حیوان انجام شد!");
+            updateProgress(15);
+        }
+
+        function cleanPet() {
+            alert("حیوان تمیز شد!");
+            updateProgress(20);
+        }
+
+        function updateProgress(points) {
+            const progressBar = document.getElementById('progress-bar').firstElementChild;
+            let currentProgress = parseInt(progressBar.style.width) || 0;
+            progressBar.style.width = Math.min(100, currentProgress + points) + '%';
+        }
+    </script>
+</body>
+</html>
