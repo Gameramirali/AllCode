@@ -90,4 +90,4 @@ while running:
             score = 0
 
 
-    sleep(0.6)
+    sleep(0.1)

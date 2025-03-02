@@ -7,7 +7,6 @@ var translate={
 }
 function keydown(event){
     console.log(event.keycode)
-    event.
 }
 
 function change(event){
