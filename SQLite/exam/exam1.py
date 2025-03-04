@@ -1,6 +1,4 @@
 import sqlite3
-
-# اتصال به پایگاه داده (ایجاد اگر وجود ندارد)
 conn = sqlite3.connect('example.db')
 cursor = conn.cursor()
 
