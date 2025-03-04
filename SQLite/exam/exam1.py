@@ -1,12 +1,11 @@
 import sqlite3
-conn = sqlite3.connect('example.db')
+
+conn = sqlite3.connect('exam1.db')
 cursor = conn.cursor()
 
-cursor.execute('''CREATE TABLE Shipper(
-        ShipperID INTEGER PRIMARY KEY,
-        ShipperName TEXT,
-        Phone TEXT
-    )''')
+# ایجاد جدول Shipper
+cursor.execute('''CREATE TABLE Shipper
+                  (ShipperID INTEGER PRIMARY KEY, ShipperName TEXT, Phone TEXT)''')
 
 shippers = [
     (1, 'Sara', '123-456-7890'),
@@ -16,7 +15,8 @@ shippers = [
     (5, 'Emma', '567-890-1234')
 ]
 
-cursor.executemany('INSERT INTO Shipper VALUES (?, ?, ?)', shippers)
+for shipper in shippers:
+    cursor.execute('INSERT INTO Shipper VALUES (?, ?, ?)', shipper)
 
 cursor.execute("SELECT * FROM Shipper WHERE ShipperName = 'Sara'")
 print(cursor.fetchall())
@@ -30,7 +30,8 @@ categories = [
     (3, 'Books', 'Printed and digital books')
 ]
 
-cursor.executemany('INSERT INTO Category VALUES (?, ?, ?)', categories)
+for category in categories:
+    cursor.execute('INSERT INTO Category VALUES (?, ?, ?)', category)
 
 cursor.execute("SELECT * FROM Category")
 print(cursor.fetchall())
