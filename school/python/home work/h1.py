@@ -5,4 +5,4 @@ years = input_days // days_in_year
 remaining_days = input_days % days_in_year
 weeks = remaining_days // days_in_week
 days = remaining_days % days_in_week
-print(f"{input_days} day = year={years},week={weeks},days={days}")
+print(f"{input_days} day == year={years},week={weeks},days={days}")

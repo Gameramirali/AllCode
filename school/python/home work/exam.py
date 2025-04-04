@@ -17,9 +17,9 @@
 # 1 2 3 4
 # 1 2 3 4 5
 
-# x=1
-# y=''
-# for i in range(1,6):
-#     print(f'{y}{str(x)}')
-#     y+=str(x)+' '
-#     x+=1
+x=1
+y=''
+for i in range(1,6):
+    print(f'{y}{str(x)}')
+    y+=str(x)+' '
+    x+=1

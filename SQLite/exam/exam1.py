@@ -3,9 +3,9 @@ import sqlite3
 conn = sqlite3.connect('exam1.db')
 cursor = conn.cursor()
 
-# ایجاد جدول Shipper
-cursor.execute('''CREATE TABLE Shipper
-                  (ShipperID INTEGER PRIMARY KEY, ShipperName TEXT, Phone TEXT)''')
+# 1
+cursor.execute('''CREATE TABLE IF NOT EXISTS Shipper
+                  (ShipperID, ShipperName TEXT, Phone TEXT)''')
 
 shippers = [
     (1, 'Sara', '123-456-7890'),
@@ -21,8 +21,9 @@ for shipper in shippers:
 cursor.execute("SELECT * FROM Shipper WHERE ShipperName = 'Sara'")
 print(cursor.fetchall())
 
-cursor.execute('''CREATE TABLE Category
-                  (CategoryID INTEGER PRIMARY KEY, CategoryName TEXT, Description TEXT)''')
+# 2
+cursor.execute('''CREATE TABLE IF NOT EXISTS Category
+                  (CategoryID, CategoryName TEXT, Description TEXT)''')
 
 categories = [
     (1, 'Electronics', 'Devices and gadgets'),

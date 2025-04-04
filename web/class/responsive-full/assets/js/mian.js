@@ -7,3 +7,8 @@ function myclick(){
         x.className = "nav";
     }
 }
+
+
+document.addEventListener('contextmenu', (e)=>{
+    e.preventDefault()
+})
