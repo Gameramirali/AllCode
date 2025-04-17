@@ -13,4 +13,6 @@ else:
     hour=minute//60
     minute=minute%60
     
-print(f'secend:{secend} ,minute:{minute} ,hour:{hour}')
+print('secend:', secend)
+print('minute:', minute)
+print('hour:', hour)

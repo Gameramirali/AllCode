@@ -1,0 +1,16 @@
+- **گربه‌ها**: موجودات مستقل و دوست‌داشتنی که رفتار جذاب و ملایم دارند.
+- **سگ‌ها**: وفادار و اجتماعی؛ از همراهی با انسان‌ها لذت می‌برند.
+- **خرگوش‌ها**: آرام و شیرین، و نیاز به نگهداری ویژه دارند.
+- **ماهی‌ها**: زیبا و کم‌هزینه برای نگهداری، مناسب برای آرامش‌بخشی.
+- **پرندگان**: مانند طوطی‌ها و قناری‌ها که اغلب رنگارنگ و آوازخوان هستند.
+- **همسترها و خوکچه‌ها**: کوچک، دوست‌داشتنی و مناسب برای کودکان.
+
+
+
+| **Name** | **Age** | **Breed**           | **Favorite Foods**            | **Unique Habits**                                                   |
+|----------|---------|---------------------|-------------------------------|---------------------------------------------------------------------|
+| Rocky    | 3 years | Golden Retriever    | Cooked chicken, peanut butter | Collects balls around the house, sleeps by the window on sunny days |
+| Bella    | 5 years | Shih Tzu            | Boiled beef, carrots          | Sleeps on soft pillows, nudges the TV remote with her nose          |
+| Max      | 2 years | German Shepherd     | Chicken, zucchini             | Kisses his owner’s foot before bed, plays with the water hose       |
+
+می تونی برایم مثال هایی با فیلد های Name Age Breed FavoriteFoods UniqueHabits برای پرندگان
