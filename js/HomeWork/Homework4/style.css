@@ -1,0 +1,88 @@
+/* General styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+/* Header styles */
+header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Input styles */
+div {
+    margin: 10px 0;
+}
+
+input#converter {
+    padding: 10px;
+    font-size: 18px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Result paragraph */
+p.result {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+    color: #333;
+}
+
+/* Buttons container */
+#buttons {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Convert button styles */
+button.convertButton {
+    background: linear-gradient(45deg, #4caf50, #8bc34a);
+    color: #fff;
+    box-shadow: 0px 4px 8px rgba(76, 175, 80, 0.5);
+}
+
+button.convertButton:hover {
+    transform: scale(1.05);
+}
+
+/* Reset button styles */
+button.resetButton {
+    background: radial-gradient(circle, #f44336, #e53935);
+    color: #fff;
+    box-shadow: 0px 4px 8px rgba(244, 67, 54, 0.5);
+}
+
+button.resetButton:hover {
+    transform: rotate(5deg);
+}
+
+/* Change button styles */
+button.changeButton {
+    background: repeating-linear-gradient(45deg, #2196f3, #64b5f6 10px, #2196f3 20px);
+    color: #fff;
+    box-shadow: 0px 4px 8px rgba(33, 150, 243, 0.5);
+}
+
+button.changeButton:hover {
+    transform: translateY(-3px);
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; 
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        input[type="text"] {
+            padding: 10px; 
+            font-size: 16px; 
+            width: 250px; 
+            border: 2px solid #ccc; 
+            border-radius: 5px; 
+            outline: none; 
+            transition: border-color 0.3s ease; 
+        }
+
+        /* استایل هنگام فوکوس */
+        input[type="text"]:focus {
+            border-color: #007BFF; 
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+        }
+            input[type="text"]:hover {
+            border-color: #999;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" name="Name" id="Text">
+    <script>
+        // varrrible
+        const inputElement=document.querySelector('Text')
+        // add event listner
+        eventListener()
+        function eventListener(){
+            inputElement.addEventListener('blur', Log)
+        }
+        // function
+        function Log(){
+            console.log(inputElement.value)
+            alert(inputElement.value)
+        }
+    </script>
+</body>
+</html>
